@@ -14,9 +14,9 @@
 #define BUG 1
 
 #ifdef BUG
-#define DEBUG_PRINT0(str); printf(str);
+#define DEBUG_PRINT(str); printf(str);
 #else
-#define DEBUG_PRINT0(str);
+#define DEBUG_PRINT(str);
 #endif
 
 extern int init(struct sockaddr_in *sin, int *lfd, int *port, char *path);
